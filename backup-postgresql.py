@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-
 ## Import required Python libraries
 import os, sys, time
 from datetime import datetime
