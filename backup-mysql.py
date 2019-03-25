@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
-
-### Import required Python libraries
+## Import required Python libraries
 import os, sys, time
 from datetime import datetime
 from paramiko import SSHClient  # don't forget to "pip install paramiko" on OS
