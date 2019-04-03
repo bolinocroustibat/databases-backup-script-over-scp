@@ -1,10 +1,10 @@
-## PostgreSQL database details to which backup to be done.
-POSTGRES_DB_NAMES = ['db1_name','db2_name'] # PostgreSQL databases to backup
-POSTGRES_SYSTEM_USER = 'postgres' # make sure this user having enough privileges to take all databases backup.
+## PostgreSQL database details to which backup to be done. Used only by backup-postgresql.py script.
+POSTGRES_DB_NAMES = ['db1_name','db2_name'] # PostgreSQL databases names to backup.
+POSTGRES_SYSTEM_USER = 'postgres' # make sure this system user has enough privileges to take all databases backup.
 
-## MySQL database details to which backup to be done. Make sure below user having enough privileges to take databases backup.
+## MySQL database details to which backup to be done. Used only by backup-mysql.py script.
 MYSQL_DB_NAMES = ['db1_name','db2_name'] # MySQL databases to backup
-MYSQL_USER = ''
+MYSQL_USER = '' # make sure this MySQL user has enough privileges to take all databases backup.
 MYSQL_USER_PASSWORD = ''
 
 ## Local setting
