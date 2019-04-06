@@ -28,7 +28,7 @@ or/and:
 0 6 * * 1,4 python3 /root/backup-sql/backup-postgresql.py > /root/backup-sql/log-last-cron.log
 ```
 
-In this case, don't forget to make your script executable with something like:
+In this case, don't forget to make your script executable by your cron user, with something like this as your cron user:
 
 ```sh
 chmod +x backup-mysql.py
