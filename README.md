@@ -1,5 +1,14 @@
 This two Python scripts are to be used for MySQL/PostgreSQL databases backups, using Python3, mysqldump utility, pg_dump, Paramiko/SSHClient and Paramiko/SCPClient.
 
+# Dependencies
+
+Written with Python 3.6, but also tested and used under Python 2.7, so there shouldn't be any issue for all Python>=2.7.
+Requires Paramiko and scp Python modules to work. Install them with pip:
+
+```sh
+pip install paramiko scp
+```
+
 # Configuration
 
 Create a settings.py file for your settings, based on example_settings.py, and fill in the settings according to the comments. If you don't want to save remotely, leave the REMOTE_URL empty.
