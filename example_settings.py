@@ -1,11 +1,11 @@
 ## PostgreSQL database details to which backup to be done. Used only by backup-postgresql.py script.
-POSTGRES_DB_NAMES = ['db1_name','db2_name'] # PostgreSQL databases names to backup.
-POSTGRES_SYSTEM_USER = 'postgres' # make sure this system user has enough privileges to take all databases backup.
+POSTGRES_DB_NAMES = ['db1_name','db2_name'] # names of the PostgreSQL databases names to backup.
+POSTGRES_SYSTEM_USER = 'postgres' # System user who will access PostgreSQL. Make sure he has enough privileges to take all databases backup.
 
 ## MySQL database details to which backup to be done. Used only by backup-mysql.py script.
-MYSQL_DB_NAMES = ['db1_name','db2_name'] # MySQL databases to backup
-MYSQL_USER = '' # make sure this MySQL user has enough privileges to take all databases backup.
-MYSQL_USER_PASSWORD = ''
+MYSQL_DB_NAMES = ['db1_name','db2_name'] # names of the MySQL databases to backup.
+MYSQL_USER = '' # MySQL user. Make sure he has enough privileges to take all databases backup.
+MYSQL_USER_PASSWORD = '' # MySQL user password
 
 ## Local setting
 LOCAL_PATH = '/root/databases-backup-script-over-scp/dumps/' # full local path where dumps will be saved, with trailing slash.
